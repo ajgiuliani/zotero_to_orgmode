@@ -31,5 +31,5 @@ Here is the result of pasting this [paper](https://www.nature.com/articles/d4158
  :ABSTRACT: Valentin Amrhein, Sander Greenland, Blake McShane and more than 800 signatories call for an end to hyped claims and the dismissal of possibly crucial effects.
  :FILES: file:/path/to/file/amrhein_2019_nature.pdf ; 
 :END:
-Here comes my notes...
+Here come my notes...
 ```
