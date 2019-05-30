@@ -13,6 +13,22 @@
 
 function doExport() {
     var item;
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; 
+    var yyyy = today.getFullYear();
+    var hh = today.getHours();
+    var nn = today.getMinutes();
+    if(dd<10) 
+    {
+	dd='0'+dd;
+    } 
+
+    if(mm<10) 
+    {
+	mm='0'+mm;
+    }
+    today = yyyy+'-'+mm+'-'+dd + ' ' + hh + ':' + nn ;
     while(item = Zotero.nextItem()) {
 	Zotero.write("** " + item.creators[0].lastName);
 	var date = Zotero.Utilities.strToDate(item.date);
@@ -25,8 +41,9 @@ function doExport() {
 	if (item.journalAbbreviation){
 	    Zotero.write(" | " + item.journalAbbreviation + "\n");
 	} else {
-	    Zotero.write(" | " + item.publicationTitle + "\n");
+	    Zotero.write(" | " + item.publicationTitle);
 	}
+	Zotero.write(" [" + today + "]  \n");
 	Zotero.write(
 		     ":PROPERTIES:"+ "\n" +
 		     " :Custum_ID: " + item.citekey + "\n" +

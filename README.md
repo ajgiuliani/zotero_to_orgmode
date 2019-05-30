@@ -15,7 +15,7 @@ Place the `Zotero_to_Orgmod.js`file in the `Zotero/translator` folder. To find t
 Here is the result of pasting this [paper](https://www.nature.com/articles/d41586-019-00857-9) into an org-mode file after it was imported into my Library:
 
 ```org
-** Amrhein | 2019 | Scientists rise up against statistical significance | Nature
+** Amrhein | 2019 | Scientists rise up against statistical significance | Nature [2019-05-30 22:19]  
 :PROPERTIES:
  :Custum_ID: amrhein2019
  :TITLE: Scientists rise up against statistical significance
@@ -26,10 +26,10 @@ Here is the result of pasting this [paper](https://www.nature.com/articles/d4158
  :PAGES: 305
  :TYPE: journalArticle
  :DOI: doi:10.1038/d41586-019-00857-9
- :URI: http://zotero.org/users/xxxxx/items/xxxxxx
+ :URI: http://zotero.org/users/xxxxxxx/items/XXXXXXXXX
  :URL: http://www.nature.com/articles/d41586-019-00857-9
  :ABSTRACT: Valentin Amrhein, Sander Greenland, Blake McShane and more than 800 signatories call for an end to hyped claims and the dismissal of possibly crucial effects.
  :FILES: file:/path/to/file/amrhein_2019_nature.pdf ; 
 :END:
-Here come my notes...
+Here come my notes
 ```
