@@ -6,6 +6,8 @@ The `Zotero_to_Orgmod.js` file is a small translator for zotero. When in the Zot
 
 I am using this to add noted behind the entry and keep track of reading notes.
 
+Formatting is copied from the format of org-ref [notes](https://github.com/jkitchin/org-ref/blob/master/org-ref.org#setting-up-notes-to-work-with-multiple-notesorg-files) 
+
 ## Installation
 Place the `Zotero_to_Orgmod.js`file in the `Zotero/translator` folder. To find the folder location see [The Zotero Data Directory](https://www.zotero.org/support/zotero_data).
 
@@ -28,4 +30,4 @@ Here is the result of pasting this [paper](https://www.nature.com/articles/d4158
  :ABSTRACT: Valentin Amrhein, Sander Greenland, Blake McShane and more than 800 signatories call for an end to hyped claims and the dismissal of possibly crucial effects.
 :END:
 Here comes my notes...
-``
+```
