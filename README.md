@@ -14,7 +14,7 @@ Place the `Zotero_to_Orgmod.js`file in the `Zotero/translator` folder. To find t
 ## Example
 Here is the result of pasting this [paper](https://www.nature.com/articles/d41586-019-00857-9) into an org-mode file after it was imported into my Library:
 
-```org-mode
+```org
 ** Amrhein | 2019 | Scientists rise up against statistical significance | Nature
 :PROPERTIES:
  :Custum_ID: amrhein2019
