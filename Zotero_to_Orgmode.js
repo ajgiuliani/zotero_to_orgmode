@@ -37,16 +37,22 @@ function doExport() {
 	for (var j in item.creators) {
 	    Zotero.write(item.creators[j].lastName + ", ");
 	}
-	     Zotero.write("\n :JOURNAL: " + item.publicationTitle + "\n" +
-			  " :YEAR: " + date.year + "\n" +
-			  " :VOLUME: " + item.volume  + "\n" +
-			  " :PAGES: " + item.pages + "\n" +
-			  " :TYPE: " + item.itemType + "\n" +
-			  " :DOI: " + "doi:"+ item.DOI + "\n" +
-			  " :URI: " + item.uri + "\n" +
-			  " :URL: " + item.url + "\n" +
-			  " :ABSTRACT: "+ item.abstractNote + "\n" +
-			  ":END:\n"
-			 );
+	Zotero.write("\n :JOURNAL: " + item.publicationTitle + "\n" +
+		     " :YEAR: " + date.year + "\n" +
+		     " :VOLUME: " + item.volume  + "\n" +
+		     " :PAGES: " + item.pages + "\n" +
+		     " :TYPE: " + item.itemType + "\n" +
+		     " :DOI: " + "doi:"+ item.DOI + "\n" +
+		     " :URI: " + item.uri + "\n" +
+		     " :URL: " + item.url + "\n" +
+		     " :ABSTRACT: "+ item.abstractNote + "\n" +
+		     " :FILES: "
+		    );
+	for (var i=0; i<item.attachments.length; i++){
+	    if(item.attachments[i].mimeType.search(/pdf/i) != -1){
+		Zotero.write("file:" + item.attachments[i].path + " ; ");
+	    }
 	}
+	Zotero.write("\n:END:\n");
+    }
 }
