@@ -26,8 +26,10 @@ Here is the result of pasting this [paper](https://www.nature.com/articles/d4158
  :PAGES: 305
  :TYPE: journalArticle
  :DOI: doi:10.1038/d41586-019-00857-9
+ :URI: http://zotero.org/users/xxxxx/items/xxxxxx
  :URL: http://www.nature.com/articles/d41586-019-00857-9
  :ABSTRACT: Valentin Amrhein, Sander Greenland, Blake McShane and more than 800 signatories call for an end to hyped claims and the dismissal of possibly crucial effects.
+ :FILES: file:/path/to/file/amrhein_2019_nature.pdf ; 
 :END:
 Here comes my notes...
 ```
